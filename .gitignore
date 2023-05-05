@@ -1,0 +1,33 @@
+ Environment variables
+.env
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+
+# OS generated files
+.DS_Store
+
+# IDE files
+*.iml
+*.ipr
+*.iws
+*.sublime-workspace
+*.sublime-project
+*.project
