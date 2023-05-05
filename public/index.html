@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset = "utf-8">
+    <title>Algorift</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel = "stylesheet" href = "reto.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="reto.js" defer></script>
+    <script src="leaderboard.js" defer></script>
+    <style>
+        h2,h3,h4,h5,body,em{
+            font-family:"Quicksand";
+        }
+        h1{
+            font-family:"Rubik";
+        }
+    </style>
+</head>
+<body class="grad">
+<!-- Menú -->
+<!-- Menú -->
+<div class="w3-top">
+    <div class="w3-white w3-xlarge" style="margin:auto">
+        <div class="w3-button w3-padding-16 w3-left"><a href="https://www.crackthecode.la/"><img src ="https://acis.org.co/portal/sites/default/files/CtCLOGO.png" class="w3-image" style="width:100%;max-width:80px"></a></div>
+        <div class="w3-right w3-padding-16 ingresa w3-margin-right"><button class="w3-button w3-black w3-padding w3-round-large" onclick="window.location.href='graficas.html'">Ir a Graficas</button></div>
+        <div class="w3-center w3-padding-16"><h1>ALGORIFT</h1></div>
+    </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+    <!-- Caja de datos inicial -->
+    <div class="w3-padding-16 w3-center" id="paginaI" style="display:block;">
+        <div class="w3-container w3-quarter"></div>
+        <div class="w3-half w3-container w3-white w3-round-xlarge">
+            <h2 class="negrita w3-text-blue">¡Bienvenido a Algorift!</h2>
+            <img src="juego.png" class="w3-image">
+            <p class="w3-padding w3-negrita">
+                <button class="w3-button w3-black w3-padding w3-round-large" id="btnSiguiente" onclick="jugador()">Regístrate aquí</button>
+                ó
+                <button class="w3-button w3-black w3-padding w3-round-large" id="btnInicio" onclick="sesion()">Inicia sesión</button>
+            </p>
+        </div>
+    </div>
+    <!-- Caja de datos niños-->
+    <div class="w3-padding-16 w3-center" id="paginaN" style="display:none;">
+        <div class="w3-container w3-quarter"></div>
+        <div class="w3-half w3-container w3-white w3-round-xlarge">
+            <h2>¡Bienvenido a Algorift!</h2>
+            <h3>Ingresa tus datos</h3>
+            <form action="/registrar_usuario" method="post">
+                <p><input id="nombre_id" type="text" class="child w3-input w3-border w3-round-large" placeholder="Nombre completo" name="nombre"><p>
+                <p><select class="w3-select w3-border w3-round-large" name="pais">
+                    <option value="" disabled selected>País</option>
+                    <option value="1">Antigua y Barbuda</option>
+                    <option value="2">Argentina</option>
+                    <option value="3">Aruba</option>
+                    <option value="4">Bahamas</option>
+                    <option value="5">Barbados</option>
+                    <option value="6">Belice</option>
+                    <option value="7">Bolivia</option>
+                    <option value="8">Brasil</option>
+                    <option value="9">Chile</option>
+                    <option value="10">Colombia</option>
+                    <option value="11">Costa Rica</option>
+                    <option value="12">Cuba</option>
+                    <option value="13">Ecuador</option>
+                    <option value="14">El Salvador</option>
+                    <option value="15">Grenada</option>
+                    <option value="16">Guadalupe</option>
+                    <option value="17">Guatemala</option>
+                    <option value="18">Guyana</option>
+                    <option value="19">Guyana Francesa</option>
+                    <option value="20">Haití</option>
+                    <option value="21">Honduras</option>
+                    <option value="22">Islas Caíman</option>
+                    <option value="23">Islas Turcas y Caicos</option>
+                    <option value="24">Islas Vírgenes</option>
+                    <option value="25">Jamaica</option>
+                    <option value="26">Martinica</option>
+                    <option value="27">México</option>
+                    <option value="28">Nicaragua</option>
+                    <option value="29">Panamá</option>
+                    <option value="30">Paraguay</option>
+                    <option value="31">Perú</option>
+                    <option value="32">Puerto Rico</option>
+                    <option value="33">República Dominicana</option>
+                    <option value="34">San Bartolomé</option>
+                    <option value="35">Uruguay</option>
+                </select></p>
+                <p><input id="edad" type="number" class="w3-input w3-border w3-round-large" placeholder="Edad" name="edad"></p>
+                <p><input id="usuario" type="text" class="w3-input w3-border w3-round-large" placeholder="Usuario" name="usuario"></p>
+                <p><input id="contra" type="password" class="w3-input w3-border w3-round-large" placeholder="Contraseña" name="contrasena"></p>
+                <p class="w3-padding"><button class="w3-button  w3-black w3-padding w3-round-large" id="btnSiguiente" onclick="tutor()">Siguiente</button>
+                <p class="w3-padding" style="font-size:13px">*Todos los campos son obligatorios</p>
+            </form>
+            <form action="/iniciar_sesion" method="post">
+                <div>
+                    <p class="w3-display-container w3-pale-blue w3-round-large w3-padding" style="text-align:center; margin-left:80px; margin-right:80px;">¿Ya tienes una cuenta? <button class="w3-button  w3-black w3-padding w3-round-large ingresa" id="btnIngresaAqui" onclick="ingresa()">Ingresa aquí</button></p>
+                </div>
+            </form>
+        </div>
+        <div class="w3-container w3-quarter"></div>
+    </div>
+    <!--Caja de datos tutor-->
+    <div class=" w3-padding-16 w3-center" style="display:none;" id="paginaT">
+        <div class="w3-container w3-quarter"></div>
+        <div class="w3-half w3-container w3-white w3-round-xlarge">
+            <h2 class="negrita w3-text-blue">¡Bienvenido a Algorift!</h2>
+            <h3 class="negrita">Ingresa los datos de tu madre, padre, o tutor</h3>
+            <form action="/registrar_tutor" method="post">
+                <p><input id="nombreTutor" type="text" class="child w3-input w3-border w3-round-large" placeholder="Nombre completo" name="nombre"><p>
+                <p><input id="rol" type="text" class="child w3-input w3-border w3-round-large" placeholder="Rol (Padre, Madre o Tutor)" name="rol"><p>
+                <p><input id="correo" type="text" class="w3-input w3-border w3-round-large" placeholder="Correo" name="correo"></p>
+                <p><input id="celular" type="text" class="w3-input w3-border w3-round-large" placeholder="Celular" name="celular"></p>
+                <p><button class="w3-button  w3-black w3-padding w3-round-large" onclick="ing()">Ingresar</button></p>
+                <p class="w3-padding" style="font-size:13px">*Todos los campos son obligatorios</p>
+            </form>
+        </div>
+        <div class="w3-container w3-quarter"></div>
+    </div>
+    <!--Login-->
+    <div class=" w3-padding-16 w3-center" id="paginaL" style="display:none;">
+        <div class="w3-container w3-quarter"></div>
+        <div class="w3-half w3-container w3-white w3-round-xlarge">
+            <h2 class="negrita">¡Bienvenido de nuevo a Algorift!</h2>
+            <h3 class="negrita w3-text-blue">Inicia sesión</h3>
+                <form action="/iniciar_sesion" method="post">
+                    <p><input id="usuarioLogin" type="text" class="child w3-input w3-border w3-round-large" placeholder="Usuario" name="usuario"><p>
+                    <p><input id="contraLogin" type="password" class="w3-input w3-border w3-round-large" placeholder="Contraseña" name="contrasena"></p>
+                    <p class="w3-padding ingresa" style="font-size:13px">¿Olvidaste tu contraseña?</p>
+                    <p><button class="w3-button  w3-black w3-padding w3-round-large" id="btnIngresar">Ingresar</button></p>
+                </form>
+            </div>
+            <div class="w3-container w3-quarter"></div>
+        </div>
+    </form>
+    <!--END PAGE CONTENT-->
+</div>
+
+<!-- es lo de las olas-->
+<div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="position:relative;bottom:0px;">
+        <path fill="#ffffff" fill-opacity="1" d="M0,64L48,53.3C96,43,192,21,288,48C384,75,480,149,576,149.3C672,149,768,75,864,42.7C960,11,1056,21,1152,32C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+</div> <!--aqui terminan las olas-->
+</body>
+</html>

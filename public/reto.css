@@ -1,0 +1,23 @@
+.grad {
+  background-image: linear-gradient(to right, #69EDFF, #D4AFE6, #69EDFF);
+}
+.negrita {
+  text-align: center;
+  font-weight: bold;
+}
+
+.imposition{
+  position: absolute;
+  bottom: 0px;
+}
+.cuadro{
+  box-shadow: 5px 5px 10px grey;
+}
+.ingresa{
+  text-decoration: underline;
+}
+
+.child {
+  /* Center horizontally*/
+  margin: 0 auto;
+}
